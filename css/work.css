@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(46, 0, 46);
+}
+
+
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 5;
+}
+.main-header .logo{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+.main-header .logo img{
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px;
+}
+.main-header .nav{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.main-header .nav ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.main-header .nav ul li{
+    display: inline-block;
+}
+.main-header .nav ul a{
+    text-decoration: none;
+    color: #4a003d;
+    font-size: 10px;
+    text-shadow: 1px 1px 2px purple;
+    margin-left: 35px;
+    font-weight: 500;
+    transition: all .5s;
+}
+.main-header .nav ul a:hover{
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px purple;
+}
+@media only screen and (min-width: 1000px){
+
+    .main-header{
+        flex-direction: row;
+    }
+    .main-header .logo img{
+        width: 100px;
+        height: 100px;
+    }
+    .main-header .logo{
+        position: relative;
+        margin: 20px 20px;
+        display: inline-block;
+    }
+    .main-header .nav ul{
+        list-style: none;
+        margin-top: 50px;
+        margin-left: 340px;
+    }
+    .main-header .nav ul a{
+        font-size: 30px;
+        text-shadow: 1px 1px 2px rgb(246, 56, 246);
+        margin-left: 80px;
+        font-weight: 900;
+    }
+    .main-header .nav ul .first:hover{
+        color: #e8fc50;
+        font-size: 30px;
+        text-shadow: 1px 1px 2px rgb(211, 246, 56);
+        margin-left: 80px;
+        font-weight: 900;
+    }
+    .main-header .nav ul .second:hover{
+        color: #50fc72;
+        font-size: 30px;
+        text-shadow: 1px 1px 2px rgb(56, 246, 72);
+        margin-left: 80px;
+        font-weight: 900;
+    }
+    .main-header .nav ul .third:hover{
+        color: #7850fc;
+        font-size: 30px;
+        text-shadow: 1px 1px 2px rgb(107, 56, 246);
+        margin-left: 80px;
+        font-weight: 900;
+    }
+    .main-header .nav ul .fourth:hover{
+        color: #fc5050;
+        font-size: 30px;
+        text-shadow: 1px 1px 2px rgb(246, 56, 56);
+        margin-left: 80px;
+        font-weight: 900;
+    }
+    
+}
+
+
+
+/*first year*/
+.main-section .firstyear{
+    position: absolute;
+    background: rgb(39, 46, 0);
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 35px;
+    border-radius: 5px;
+    border: 5px solid black;
+    box-shadow: 2px 2px 8px #e8fc50;
+}
+.firstyear h1{
+    color: #e8fc50;
+    text-shadow: 2px 2px 5px #111;
+    text-align: center;
+}
+.firstyear img{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.firstyear p{
+    color: #fff;
+    font-size: 11px;
+    margin-left: 60px;
+    margin-top: -24px;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px #e8fc50;
+}
+@media only screen and (min-width: 1000px){
+    .main-section .firstyear{
+        position: absolute;
+        width: 800px;
+        height: 500px;
+        margin-top: 200px;
+        margin-left: 350px;
+    }
+    .firstyear h1{
+        color: #e8fc50;
+        text-shadow: 2px 2px 5px #111;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 40px;
+    }
+    .firstyear img{
+        width: 70px;
+        height: 70px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .firstyear p{
+        color: #fff;
+        font-size: 25px;
+        margin-left: 120px;
+        margin-top: -50px;
+        font-weight: 500;
+        text-shadow: 1px 1px 5px #e8fc50;
+    }
+}
+
+
+
+
+/*second year*/
+.main-section .secondyear{
+    position: absolute;
+    background: rgb(0, 46, 8);
+    width: 300px;
+    height: 300px;
+    margin-top: 550px;
+    margin-left: 35px;
+    border-radius: 5px;
+    border: 5px solid black;
+    box-shadow: 2px 2px 8px #50fc72;
+}
+.secondyear h1{
+    color: #50fc72;
+    text-shadow: 2px 2px 5px #111;
+    text-align: center;
+}
+.secondyear p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 90px;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px #50fc72;
+}
+@media only screen and (min-width: 1000px){
+    .main-section .secondyear{
+        width: 800px;
+        height: 500px;
+        margin-top: 800px;
+        margin-left: 350px;
+    }
+    .secondyear h1{
+        margin-top: 10px;
+        font-size: 40px;
+    }
+    .secondyear p{
+        color: #fff;
+        font-size: 40px;
+        margin-top: 160px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+
+
+
+/*third year*/
+.main-section .thirdyear{
+    position: absolute;
+    background: rgb(8, 0, 46);
+    width: 300px;
+    height: 300px;
+    margin-top: 950px;
+    margin-left: 35px;
+    border-radius: 5px;
+    border: 5px solid black;
+    box-shadow: 2px 2px 8px #7850fc;
+}
+.thirdyear h1{
+    color: #7850fc;
+    text-shadow: 2px 2px 5px #111;
+    text-align: center;
+}
+.thirdyear p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 90px;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px #7850fc;
+}
+@media only screen and (min-width: 1000px){
+    .main-section .thirdyear{
+        width: 800px;
+        height: 500px;
+        margin-top: 1400px;
+        margin-left: 350px;
+
+    }
+    .thirdyear h1{
+        margin-top: 10px;
+        font-size: 40px;
+    }
+    .thirdyear p{
+        color: #fff;
+        font-size: 40px;
+        margin-top: 160px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/*fourth year*/
+.main-section .fourthyear{
+    position: absolute;
+    background: rgb(46, 0, 0);
+    width: 300px;
+    height: 300px;
+    margin-top: 1350px;
+    margin-left: 35px;
+    border-radius: 5px;
+    border: 5px solid black;
+    box-shadow: 2px 2px 8px #fc5050;
+}
+.fourthyear h1{
+    color: #fc5050;
+    text-shadow: 2px 2px 5px #111;
+    text-align: center;
+}
+.fourthyear p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 90px;
+    font-weight: 500;
+    text-shadow: 1px 1px 5px #fc5050;
+}
+@media only screen and (min-width: 1000px){
+    .main-section .fourthyear{
+        width: 800px;
+        height: 500px;
+        margin-top: 2000px;
+        margin-left: 350px;
+
+    }
+    .fourthyear h1{
+        margin-top: 10px;
+        font-size: 40px;
+    }
+    .fourthyear p{
+        color: #fff;
+        font-size: 40px;
+        margin-top: 160px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+
+
+
+
+.main-section .fifthyear{
+    position: absolute;
+    width: 300px;
+    height: 10px;
+    margin-top: 1750px;
+    margin-left: 35px;
+    border-radius: 5px;
+
+}
+@media only screen and (min-width: 1000px){
+    .main-section .fifthyear{
+        width: 800px;
+        height: 500px;
+        margin-top: 2050px;
+        margin-left: 350px;
+    }
+}
